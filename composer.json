@@ -1,0 +1,22 @@
+{
+  "name": "npmweb/php-env-loader",
+  "description": "PHP library to load environment variables from various sources",
+  "authors": [
+    {
+      "name": "Josh Justice",
+      "email": "josh.justice@northpoint.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "suggest": {
+    "illuminate/support": "4.2.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "NpmWeb\\PhpEnvLoader": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
