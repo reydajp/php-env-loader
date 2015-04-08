@@ -1,6 +1,7 @@
 {
   "name": "npmweb/php-env-loader",
   "description": "PHP library to load environment variables from various sources",
+  "license": "MIT",
   "authors": [
     {
       "name": "Josh Justice",
