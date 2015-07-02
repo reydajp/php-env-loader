@@ -10,13 +10,12 @@ class JsonEnvLoader implements EnvLoader {
 
     public function load() {
         $envFromJson = (array)json_decode(file_get_contents($this->jsonFile));
-        if( empty($envFromJson) ) {
-            throw new \Exception("syntax error in env json file, or no config values specified");
+        if( !empty($envFromJson) ) {
+            foreach( $envFromJson as $key => $value ) {
+                putenv($key.'='.$value);
+            }
         }
 
-        foreach( $envFromJson as $key => $value ) {
-            putenv($key.'='.$value);
-        }
     }
 
 }
